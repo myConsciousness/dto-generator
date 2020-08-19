@@ -78,7 +78,7 @@ dependencies {
     implementation 'org.thinkit.common:dev-utils:v1.0.0'
     implementation 'org.thinkit.framework.content:content-framework:v1.0.0-2-g563f490'
     implementation 'org.thinkit.generator.common:generator-commons:v1.0.0-1-ga27f61f'
-    implementation 'org.thinkit.generator.workbook.common:generator-commons-workbook:v1.0.0-4-g5fea12f'
+    implementation 'org.thinkit.generator.workbook.common:generator-commons-workbook:v1.0.0-5-ga7cb34'
 }
 
 application {
