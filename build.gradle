@@ -86,14 +86,10 @@ application {
 }
 
 run {
-    if (project.hasProperty('generatorCategory')) {
-        args project.generatorCategory
-    } else {
-        args "0"
-    }
-
     if (project.hasProperty('filePath')) {
         args project.filePath
+    } else {
+        args "C:\\Users\\yourd\\Desktop\\【DTO定義書】バージョン_プロジェクト名_クラス名.xlsx"
     }
 
     if (project.hasProperty('outputPath')) {
