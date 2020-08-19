@@ -28,7 +28,7 @@ import org.thinkit.generator.workbook.common.DefinitionPath;
  *
  * @see #main()
  */
-final class Main {
+final class EntryDtoGenerator {
 
     /**
      * ログ出力オブジェクト
