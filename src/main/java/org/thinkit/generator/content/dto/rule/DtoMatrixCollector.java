@@ -21,8 +21,8 @@ import org.thinkit.common.util.workbook.FluentSheet;
 import org.thinkit.common.util.workbook.FluentWorkbook;
 import org.thinkit.framework.content.rule.Rule;
 import org.thinkit.framework.content.rule.RuleInvoker;
-import org.thinkit.generator.Sheet;
 import org.thinkit.generator.common.vo.dto.DtoMatrix;
+import org.thinkit.generator.workbook.common.Sheet;
 
 import lombok.EqualsAndHashCode;
 import lombok.NonNull;

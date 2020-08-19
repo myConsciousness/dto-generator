@@ -16,7 +16,10 @@ package org.thinkit.generator;
 
 import org.thinkit.common.catalog.Extension;
 import org.thinkit.common.util.file.FluentFile;
+import org.thinkit.generator.common.Generator;
 import org.thinkit.generator.content.dto.rule.DtoResourceFacade;
+import org.thinkit.generator.workbook.common.AbstractGenerator;
+import org.thinkit.generator.workbook.common.DefinitionPath;
 
 import lombok.NonNull;
 
@@ -27,15 +30,30 @@ import lombok.NonNull;
  * @since 1.0
  * @version 1.0
  */
-public final class DtoGenerator extends AbstractGenerator {
+final class DtoGenerator extends AbstractGenerator {
 
     /**
      * コンストラクタ
      *
-     * @param definitionPath 生成するパスを管理するオブジェクト
+     * @param definitionPath 定義書のパス
+     *
+     * @exception NullPointerException 引数として {@code null} が渡された場合
      */
-    public DtoGenerator(@NonNull DefinitionPath definitionPath) {
+    private DtoGenerator(@NonNull DefinitionPath definitionPath) {
         super(definitionPath);
+    }
+
+    /**
+     * 引数として渡された {@code definitionPath} を基に {@link DtoGenerator}
+     * クラスの新しいインスタンスを生成し返却します。
+     *
+     * @param definitionPath 定義書のパス
+     * @return {@link DtoGenerator} クラスの新しいインスタンス
+     *
+     * @exception NullPointerException 引数として {@code null} が渡された場合
+     */
+    public static Generator of(@NonNull DefinitionPath definitionPath) {
+        return new DtoGenerator(definitionPath);
     }
 
     @Override
