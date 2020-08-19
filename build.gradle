@@ -82,7 +82,7 @@ dependencies {
 }
 
 application {
-    mainClassName = 'org.thinkit.generator.Main'
+    mainClassName = 'org.thinkit.generator.EntryDtoGenerator'
 }
 
 run {
