@@ -76,9 +76,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.12'
 
     implementation 'org.thinkit.common:dev-utils:v1.0.0'
-    implementation 'org.thinkit.framework.content:content-framework:v1.0.0-8-g6cd5475'
+    implementation 'org.thinkit.framework.content:content-framework:v1.0.0-10-gf4c3c5a'
     implementation 'org.thinkit.generator.common:generator-commons:v1.0.0-1-ga27f61f'
-    implementation 'org.thinkit.generator.workbook.common:generator-commons-workbook:v1.0.0-5-ga7cb348'
+    implementation 'org.thinkit.generator.workbook.common:generator-commons-workbook:v1.0.0-7-gc6cfe39'
 }
 
 application {
