@@ -89,7 +89,7 @@ run {
     if (project.hasProperty('filePath')) {
         args project.filePath
     } else {
-        args "C:\\Users\\yourd\\Desktop\\【DTO定義書】バージョン_プロジェクト名_機能.xlsx"
+        args "C:\\Users\\yourd\\Desktop\\dto-definition-version-project-function.xlsx"
     }
 
     if (project.hasProperty('outputPath')) {
