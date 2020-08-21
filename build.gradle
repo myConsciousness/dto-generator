@@ -86,8 +86,6 @@ application {
 }
 
 run {
-
-
     if (project.hasProperty('filePath')) {
         args project.filePath
     } else {
