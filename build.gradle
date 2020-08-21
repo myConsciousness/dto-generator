@@ -86,16 +86,28 @@ application {
 }
 
 run {
+
+
     if (project.hasProperty('filePath')) {
         args project.filePath
     } else {
-        args "C:\\Users\\yourd\\Desktop\\dto-definition-version-project-function.xlsx"
+        args ".\\template\\dto-definition-version-project-function.xlsx"
     }
 
     if (project.hasProperty('outputPath')) {
         args project.outputPath
     } else {
-        args "C:\\Users\\yourd\\Desktop"
+
+        def output = "\\desktop"
+        def osname = System.getProperty("os.name");
+
+        if(osname.indexOf("Windows") >= 0){
+            args System.getenv("USERPROFILE") + output
+        } else if(osname.indexOf("Mac") >= 0){
+            args System.getenv("HOME") + output
+        } else {
+            args System.getenv("HOME") + output
+        }
     }
 }
 
